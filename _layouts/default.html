@@ -63,7 +63,7 @@
                         <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore"
                                 src="assets/appstore.png"></a>
                         <button onclick="getParams()" class="appDescription">
-                            GET URL PARAMETERS
+                            GET URL PARAMETERS 2
                         </button>
                     </div>
                     <script>
@@ -75,7 +75,7 @@
                                 return url.get(key);
                             }
 
-                            for (let i of uri.entries()){
+                            for (let i of url.entries()){
                                 console.log(i)
                             }
                         }
