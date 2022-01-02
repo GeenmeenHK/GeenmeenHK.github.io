@@ -3,6 +3,26 @@
 
 {% include head.html %}
 
+<script>
+    function getParams(key=null) {
+        let currentURL = window.location.search;
+        let url = new URLSearchParams(currentURL);
+        
+        if (key) {
+            return url.get(key);
+        }
+
+        for (let i of url.entries()){
+            console.log(i)
+            console.log(i[1])
+            // location.href= "geenmeen://--/Geen/?GeenId="+i[1]
+            location.href='google.com'
+        }
+
+        
+    }
+</script>
+
 <body>
     <div class="imageWrapper">
         <div class="headerBackground">
@@ -66,22 +86,7 @@
                             GET URL PARAMETERS 3
                         </button>
                     </div>
-                    <script>
-                        function getParams(key=null) {
-                            let currentURL = window.location.search;
-                            let url = new URLSearchParams(currentURL);
-                            
-                            if (key) {
-                                return url.get(key);
-                            }
-
-                            for (let i of url.entries()){
-                                console.log(i)
-                                console.log(i[1])
-                            }
-                        }
-
-                    </script>
+                    
                 </div>
                 {% include features.html %}
                 {% include footer.html %}
