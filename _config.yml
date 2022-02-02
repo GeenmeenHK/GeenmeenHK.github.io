@@ -37,7 +37,7 @@ features                                  :
 
   - title                                 : Explore
     description                           : Find nearby events and meet new friends
-    fontawesome_icon_name                 : fa-globe
+    fontawesome_icon_name                 : fa-bath
     
   - title                                 : Engage
     description                           : Interact with people who share similar interests
